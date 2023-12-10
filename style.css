@@ -177,27 +177,12 @@ body {
 
 .products {
     position: absolute;
-    bottom: 2rem;
-    margin: 0;
-    padding: 0;
+    bottom: 80px;
 }
 
-.products__image img {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    transform: translateY(-10%);
-}
-
-.products__image {
-    display: block;
-    max-width: 400px;
-    height: 200px;
-    overflow: hidden;
-    border: solid black 1px;
-    margin: 0;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+.swiper {
+    width: 400px;
+    height: 200px 
 }
 
 .products__button {

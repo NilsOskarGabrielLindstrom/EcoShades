@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/zqi2fvo.css">
     <script src="icons.js" defer></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="swiper.js" defer></script>
 </head>
 <body>
 
@@ -32,23 +36,49 @@
         <div class="hero">
             <div class="hero__content">
 
+                <!-- Hero text -->
                 <div class="hero__text">
                     <h1 class="hero__title">Ecoshades</h1>
                     <p class="hero__subtitle">Stylish, and environmentally sound!</p>
                 </div>
 
+                <!-- Products fader -->
                 <div class="products">
                     <div class="products__slide">
-                        <figure class="products__image">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
                             <img src="assets/images/3.jpg" alt="">
-                        </figure>
-                        <div class="products__content">
-                            <a href="" class="products__button">
-                                Buy now
-                            </a>
                         </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/2.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/images/1.jpg" alt="">
+                        </div>
+                        ...
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                    
+                        <!-- If we need navigation buttons
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
+                    
+                        <!-- If we need scrollbar
+                        <div class="swiper-scrollbar"></div> -->
+                    </div>
+                    <div class="products__content">
+                        <a href="" class="products__button">
+                            Buy now
+                        </a>
                     </div>
                 </div>
+
+                <!-- Social icons -->
                 <div class="hero__social">
                     <ul class="social__list">
                         <li class="social__item">
