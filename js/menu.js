@@ -1,3 +1,4 @@
+
 // Function for opening menu
 
 const menu = () => {

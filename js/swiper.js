@@ -11,5 +11,6 @@ const swiper = new Swiper('.swiper', {
     effect: 'fade',
   
   });
+  
 
   
