@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/zqi2fvo.css">
     <script src="icons.js" defer></script>
+    <script src="menu.js" defer></script>
+    <script src="load.js" defer></script>
+
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -15,6 +18,8 @@
 <body>
 
     <div class="container">
+
+        <!-- Header -->
         <header class="header">
             <div class="header__inner">
                 <a href="" class="logo">
@@ -28,18 +33,35 @@
                         <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
                     </ul>
                 </div>
-                <figure class="menu-button">
-                    <img src="assets/icons/menu.svg" alt="">
-                </figure>
+                <button class="menu-button">
+                        <img src="assets/icons/menu.svg" alt="">
+                </button>
             </div>
         </header>
+
+        <!-- Full menu -->
+        <div class="full-menu">
+            <button class="full-menu__button">
+                <img src="assets/icons/X.svg" alt="">
+            </button>
+            <div class="full-menu__inner">
+                <div class="full-menu__content">
+                    <a>Products</a>
+                    <a>Gallery</a>
+                    <a>About</a>
+                    <a>Contact</a>
+                </div>
+            </div>
+            <span class="full-menu__copy"> Copyright Oskar Lindström 2023</span>
+        </div>
+
         <div class="hero">
             <div class="hero__content">
 
                 <!-- Hero text -->
                 <div class="hero__text">
-                    <h1 class="hero__title">Ecoshades</h1>
-                    <p class="hero__subtitle">Stylish, and environmentally sound!</p>
+                    <h1 class="hero__title">ecoshades</h1>
+                    <p class="hero__subtitle">Amazing sunglasses for a more sustainable world</p>
                 </div>
 
                 <!-- Products fader -->
@@ -56,9 +78,6 @@
                         <div class="swiper-slide">
                             <img src="assets/images/2.jpg" alt="">
                         </div>
-                        <div class="swiper-slide">
-                            <img src="assets/images/1.jpg" alt="">
-                        </div>
                         ...
                         </div>
                         <!-- If we need pagination -->
@@ -70,11 +89,12 @@
                     
                         <!-- If we need scrollbar
                         <div class="swiper-scrollbar"></div> -->
-                    </div>
-                    <div class="products__content">
-                        <a href="" class="products__button">
-                            Buy now
-                        </a>
+
+                        <div class="products__content">
+                            <a href="" class="products__button">
+                                Buy now
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -96,7 +116,11 @@
                 </div>
             </div>
         </div>
+        
+        <!-- For startup animation -->
+        <div class="blur">
 
+        </div>
     </div>
 
 </body>
